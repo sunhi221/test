@@ -594,6 +594,18 @@ flex-wrap:wrap;
     display: block;
 }
 
+/* ----------- */
+/* フッター
+/* ----------- */
+.footer_in {
+flex-wrap:wrap;
+}
+
+.footer_in p {
+    text-align: center;
+	margin-top:10px;
+
+}
 
 
 }

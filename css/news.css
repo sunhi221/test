@@ -1,287 +1,59 @@
 /*PC-------------------------------------------------------------------*/
 
 
-/* ----------- */
-/* ファーストビュー
-/* ----------- */
-.first_wrap{
-background:url("../images/first_bg.jpg") left bottom;
-color: #fff;
-padding:100px 0;
-}
 
-.first_in{
-width:55%;
-margin-left:auto;
-}
-
-.first_wrap h2 img{
-max-width:700px;
-}
-
-.first_wrap h3{
-font-weight: bold;
+.news_wrap {display: flex;
+justify-content: space-between;
 margin:50px 0;
 }
 
-.first_icon{
-display: flex;
-width:70%;
-margin-left:auto;
-}
-.first_icon p{
-margin-left:10px;
-}
-
-
-/* ----------- */
-/* ニュース読み込み
-/* ----------- */
-.news_wrap{
-display: flex;
-margin:30px 0;
-}
 .news_wrap h2{
-font-weight: bold;
-margin-right:3%;
-}
-
-.news_wrap p{
-color: #676767;
-margin-right:3%;
-}
-
-.news_wrap h3{
-color: #676767;
-}
-
-
-/* ----------- */
-/* コピー文章
-/* ----------- */
-
-
-.copy_wrap{
-background-color: #285BC4;
-text-align: center;
-padding:50px 0;
-}
-.copy_wrap h2{
-font-size:4rem;
-font-weight: bold;
-color: #FFF700;
-margin-bottom:30px;
-}
-
-.copy_wrap p{
-font-size:1.6rem;
-font-weight: bold;
-color: #fff;
-}
-
-/* ----------- */
-/* 2つのコース
-/* ----------- */
-
-
-
-.course_wrap h2{
-font-size:3.4rem;
-font-weight: bold;
 color: #0F498A;
-margin-bottom:15px;
-}
-
-.course_wrap h2,
-.course_wrap p{
-background-color: #fff;
-    padding: 5px 15px;
-}
-
-.course_btn01,
-.course_btn02{
-max-width: 800px;
-margin:0 auto;
-border-radius: 10px;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
-  margin-bottom:30px;
-}
-
-.course_btn01{
-background: url("../images/course_bg01.jpg");
-background-repeat: no-repeat;
-}
-
-.course_btn02{
-background: url("../images/course_bg02.jpg");
-background-repeat: no-repeat;
-}
-
-.course_btn01 div,
-.course_btn02 div{
-width:45%;
-margin-left:auto;
-padding:50px 0;
-}
-
-.course_btn01 h2 span{
-color: #0FBBD5;
-}
-
-.course_btn02 h2 span{
-color: #FF4263;
-}
-
-/* ----------- */
-/* 理由
-/* ----------- */
-
-
-.reason_data{
-margin:5%;
-display: flex;
-margin: 0% 5% 5% 5%;
-}
-.reason_data img{
-max-width: 800px;
-margin:0 auto 30px;
-
-}
-
-/* ----------- */
-/* 不安解消
-/* ----------- */
-
-
-.fuan_wrap{font-weight: bold;
-text-align: center;
-color: #fff;
-    padding: 30px 0;
-}
-
-.fuan_wrap p{
-font-size:2rem;
-}
-.fuan_wrap h2{
-font-size:3rem;
-}
-
-.fuan_bg{
-background-color: #ccc;
-}
-
-.fuan_flex{
-    padding: 20px 0;
-display: flex;
-max-width:800px;
-margin:0 auto;
-justify-content: space-between;
-align-items: center;
-}
-
-.fuan_in_icon{flex-basis: 15%;
-}
-
-.fuan_in_tx{flex-basis:80%;
-}
-
-.fuan_in_tx h3{
-color: #0F498A;
+border-bottom:1px solid #ccc;
 font-weight: bold;
-    font-size: 3rem;
-	margin-bottom:15px;
+}
+.news_l{
+flex-basis:20%;
 }
 
-
-.fuan_in_tx p{
-    font-size: 1.6rem;
+.news_l_in {
+    margin-bottom: 50px;
 }
-
-
-
-.fuan_zisseki_box{
-background-color: #FFFF00;
-padding:4%;
-max-width:800px;
-margin:0 auto 50px;
-
+.news_l_in h2{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+	}
+.news_r{
+flex-basis:75%;
 }
-.fuan_zisseki_box ul{
-display: flex;
-flex-wrap: wrap;
-font-weight: bold;
-font-size:1.4rem;
-justify-content: space-between;
-}
-
-.fuan_zisseki_box li{
-flex-basis:22%;
-}
-
-.fuan_zisseki_box p{
-color:#FF4263;
-text-align: center;
-font-size:1.8rem;
-font-weight: bold;
-margin:10px auto;
-}
-
-.fuan_btn{
-text-align: center;
-}
-
-.fuan_btn a{
-    color: #0F498A;
-}
-
-
-
-
-/* ----------- */
-/* 下部メッセージ
-/* ----------- */
-
-.message_bg {
-text-align: center;
-padding:50px 0;
-}
-.message_bg h2{
-color: #ccc
-}
-
-.message_bg h3{
-max-width: 600px;
-margin: 30px auto;
-}
-
-.message_bg p{
-color: #fff;
-}
-
-.message_bg span{
+.news_kiji {
+margin-bottom:70px;
+	}
+.news_kiji span{
+color: #ccc;
 display: block;
-font-weight: bold;
-color: #fff;
-font-size:1.2rem;
-margin-top:20px;
-}
+	}	
+.news_kiji h2{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+	font-size:2.0rem;
+	}
+.news_kiji p{
+line-height: 180%;
+	}
 
 /*tablet--------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 999px) {
 
 
+.news_l{
+flex-basis:25%;
+}
 
-
-/* ----------- */
-/* 派生ページ共通
-/* ----------- */
-
-
-
-/* --------------------------------------------------------------- */
-/* 看護ページ
-/* --------------------------------------------------------------- */
+.news_r{
+flex-basis:70%;
+}
 
 }
 
@@ -291,63 +63,34 @@ margin-top:20px;
 @media screen and (max-width: 764px) {
 
 
+.news_wrap {
+flex-wrap:wrap;
+}
+
+.news_l,.news_r{
+flex-basis: 100%;
+}
+
+.news_l{
+order:2;
+}
+
+.news_r{
+order:1;
+}
+
+.news_l_in ul{
+display: flex;
+flex-wrap: wrap;
+}
+.news_l_in ul li{
+margin-right: 5%;
+}
 
 /* ----------- */
 /* ファーストビュー
 /* ----------- */
 
-.first_in{
-width:100%;
-}
-
-.first_icon {
-    display: flex;
-    width: 100%;
-    margin-left: auto;
-	}
-
-
-.course_btn01 div, .course_btn02 div {
-    width: 100%;
-	}
-	
-.course_wrap h2, .course_wrap p {
-  background-color: transparent;
-  text-align: center;
-
-}
-	
-.course_btn01 div, .course_btn02 div {
-    padding: 20px 0;
-	}
-
-
-
-	
-.fuan_flex {
-flex-wrap:wrap;
-}
-
-.fuan_in_icon,.fuan_in_tx {
-    flex-basis: 100%;
-}
-.fuan_in_icon img{
-max-width:20%;
-margin:0 auto;
-}
-
-.fuan_in_tx h3 {
-text-align: center;
-}
-
-
-.fuan_zisseki_box li {
-    flex-basis: 48%;
-}
-
-.fuan_zisseki_box {
-    padding: 7%;
-	}
 
 }
 
