@@ -1,0 +1,599 @@
+@charset "UTF-8";
+/* ==================================================================================================================
+==================================================================================================================
+
+基本設定（pc）
+
+==================================================================================================================
+==================================================================================================================*/
+
+
+/*基本CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+html {
+	position: relative;
+    height:100%;
+    font-size: 10px;
+    -webkit-font-smoothing: antialiased;/* safariちらつき防止 */
+    }
+
+
+body {
+    position: relative;
+    width: 100%;
+    font-family:Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,"メイリオ","Hiragino Kaku Gothic Pro",meiryo,sans-serif;
+    line-height: 1.4;
+	overflow-wrap: break-word;/* 文字の折り返し */
+	font-size:1.6rem;
+    }
+
+.clearfix {
+    display: block;
+	}
+	
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;/* 隙間対応 */
+    font-size: 0.1em;/* 隙間対応 */
+    line-height: 0;/* 隙間対応 */
+    }
+
+
+/* 電話番号設定 */
+
+a[href^="tel:"] {
+    pointer-events: none;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    color: #333;
+    }
+
+
+
+/*リンク指定*/
+
+a {
+    color: #000;
+    }
+
+a:hover {
+	color:#999;
+    transition: 0.5s;
+    }
+
+a img:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+    }
+
+img {
+    width: 100%;
+    }
+
+_:-ms-lang(x), img {
+    width: 100%;
+    }
+
+
+/*ボックス*/
+.content_1000 {
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+	
+/*表示・非表示*/
+.pc {display: block;}
+
+.tab{display: none;}
+
+.sp {display: none;}
+
+.pc_tab {display: block;}
+.tab_sp {display: none;}
+/*改行*/
+.br-pc {
+    display: block;
+}
+
+.br-tab {
+    display: none;
+}
+
+.br-sp {
+    display: none;
+}
+
+
+
+/* ----------- */
+/* 共通
+/* ----------- */
+
+/*ボタン*/
+.common_btn01 a{
+background-color: #FFF;
+border-radius:10px;
+box-shadow: 0 5px 10px 0 rgb(0 0 0 / 50%);
+font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+	margin: 0 auto;
+	display: inline-block;
+	letter-spacing:1px;
+}
+
+
+/*大タイトル*/
+.common_ti01 {
+    display: flex;
+    align-items: center;
+	font-weight: bold;
+	padding: 50px 0;
+}
+.common_ti01:before,
+.common_ti01:after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #666;
+}
+
+.common_ti01:before {
+    margin-right: 1rem;
+}
+.common_ti01:after {
+    margin-left: 1rem;
+}
+
+.common_ti01 p{
+font-size:1.8rem;
+text-align: center;
+}
+.common_ti01 h2{
+font-size:3.4rem;
+text-align: center;
+}
+.common_ti01 span{
+letter-spacing: 10px;
+color: #ccc !important;
+font-size:1rem;
+text-align:center;
+display: block;
+}
+
+
+/*背景文字・個別設定*/
+.common_ti01.course{
+background: url("../images/tibg_course.gif") 100%;
+	background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.common_ti01.reason{
+background: url("../images/tibg_reason.gif") 100%;
+	background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.common_ti01.passing{
+background: url("../images/tibg_passing.gif") 100%;
+	background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.common_ti01.contact{
+background: url("../images/tibg_contact.gif") 100%;
+	background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*文字色・個別設定*/
+.common_ti01.darkblue{
+color:#0F498A;
+}
+
+
+/*背景グラデーション設定*/
+.bg_darkblue01{
+ background: linear-gradient(70deg, #0F5EBB, #0995FF);
+}
+
+
+/*理由*/
+
+.common_reason_wrap{
+    color: #fff;
+}
+.common_reason_01_box,
+.common_reason_02_box
+{
+display: flex;
+justify-content: space-between;
+	padding: 5%;
+    box-sizing: border-box;
+	align-items: center;
+}
+.common_reason_01_box div,
+.common_reason_02_box div{
+flex-basis:46%;
+}
+
+.common_reason_01_box div img{
+max-width: 440px;
+}
+
+.common_reason_wrap h3{
+font-weight: bold;
+font-size:3rem;
+text-align: center;
+margin-bottom:20px;
+}
+
+.common_reason_wrap h3 span{
+color: #0F498A;
+}
+/*体験*/
+
+.common_taiken_wrap{
+border: 4px solid #ccc;
+border-top:none;
+padding: 0% 5% 5% 5%;
+}
+
+.common_taiken_box{
+display: flex;
+justify-content: space-between;
+}
+
+.common_taiken_fuki img{
+max-width: 500px;
+margin: 0 auto;
+}
+
+.common_taiken_fuki{
+margin-top:40px;
+}
+.common_taiken_fuki:first-child{
+margin-top:0px;
+}
+
+.common_taiken_in01,
+.common_taiken_in02{
+text-align: left;
+flex-basis:48%;
+}
+
+.common_taiken_in01 div{
+font-weight: bold;
+display: inline;
+color: #fff;
+padding: 3px 6px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.common_taiken_in01 span{
+display: block;
+}
+.common_taiken_kango{
+background-color: #FF4263;
+}
+.common_taiken_kounin{
+background-color: #3FA9F5;
+}
+
+.common_taiken_in01 h3{
+font-weight: bold;
+font-size:2.0rem;
+margin: 20px 0;
+}
+
+
+.common_taiken_btn{
+text-align: center;
+padding:30px 0;
+background-color: #ccc;
+margin-bottom:50px;
+}
+
+.common_taiken_btn a{
+color: #0F498A;
+}
+
+
+
+
+/* ----------- */
+/* 下部固定
+/* ----------- */
+
+/*メッセージ*/
+.common_message_bg{
+ background:  linear-gradient(70deg, #0F5EBB, #0995FF);
+}
+
+.common_message_in01{
+display: flex;
+font-weight: bold;
+justify-content: space-between;
+    padding: 50px;
+	align-items: center;
+}
+.common_message_tx {
+text-align: center;
+flex-basis:40%
+}
+.common_message_tx p{
+color: #fff;
+font-size:2.4rem;
+}
+
+.common_message_tx h2{
+color: #fff000;
+font-size:4.4rem;
+}
+.common_message_img{
+display: flex;
+flex-basis:46%;
+
+}
+.common_message_img p{
+margin-left: 10px;
+}
+
+
+
+/*問い合わせボタン*/
+
+.common_conbtn_bg{background-color: #fff000;
+padding:50px 0;}
+.common_conbtn_in{
+max-width:800px;
+margin: 0 auto;
+}
+.common_conbtn_in a img{
+border-radius: 10px;
+box-shadow: 0 5px 10px 0 rgb(0 0 0 / 50%);
+}
+
+.common_marker01{
+background-color: #FFFF00;
+    padding: 2px 7px;
+    margin: 0px 3px;
+}
+
+
+
+
+/* ----------- */
+/* フッター
+/* ----------- */
+
+
+.footer_bg{
+background-color: #ccc;
+padding:50px 0;
+}
+
+.footer_in{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer_in h2{
+max-width:300px;
+}
+.footer_in p{
+color: #0f498a;
+text-align: right;
+font-size:1.2rem;
+}
+.footer_copy{
+text-align: center;
+color: #999;
+font-size:1.0rem;
+margin:20px auto;
+padding-bottom:50px;
+}
+
+/* =================派生ページ設定ここから===================*/
+
+
+/*派生タイトル部分*/
+
+
+/* ==================================================================================================================
+==================================================================================================================
+
+基本設定（tab）
+
+==================================================================================================================
+================================================================================================================== */
+
+
+
+@media screen and (max-width: 999px) {
+	
+/* 電話番号設定 */
+
+a[href^="tel:"] {
+    pointer-events: auto;
+    }
+
+
+.content_1000 {
+	width:90%;
+	}
+	
+/*表示・非表示*/
+.pc {display: none;}
+
+.tab{display: block;}
+
+.sp {display: none;}
+
+.pc_tab {display: block;}
+.tab_sp {display: block;}
+
+/*改行*/
+.br-pc {
+    display: none;
+}
+
+.br-tab {
+    display: block;
+}
+
+.br-sp {
+    display: none;
+}
+
+
+/* ----------- */
+/* 下部固定
+/* ----------- */
+
+/*メッセージ tabは改行なし*/
+
+
+.common_message_tx br{
+display: none;
+}
+
+
+/*文字色・個別設定*/
+.common_ti01{
+background-size: 110% !important;
+}
+
+
+}
+
+/* ==================================================================================================================
+==================================================================================================================
+
+基本設定（sp）
+
+==================================================================================================================
+================================================================================================================== */
+
+
+
+@media screen and (max-width: 764px) {
+	
+	
+body {
+	font-size:1.4rem;
+    }	
+
+/*改行*/
+.br-pc {
+    display:none;
+}
+
+.br-tab {
+    display:none;
+}
+
+.br-sp {
+    display:block;
+}
+
+/*表示・非表示*/
+.pc {display: none;}
+
+.tab{display: none;}
+
+.sp {display: block;}
+
+.pc_tab {display: none;}
+.tab_sp {display: block;}
+
+
+/*文字サイズ*/
+
+.sp_tx01{
+	font-size:2.4rem !important;
+}
+
+.sp_tx02{
+	font-size:1.8rem !important;
+}
+
+.sp_tx03{
+	font-size:1.4rem !important;
+}
+
+.sp_tx04{
+	font-size:1.2rem !important;
+}
+
+.sp_tx05{
+	font-size:0.8rem !important;
+}
+
+
+
+
+/*理由*/
+.common_reason_01_box,
+.common_reason_02_box {
+flex-wrap: wrap;}
+
+.common_reason_01_box div, .common_reason_02_box div {
+    flex-basis: 100%;
+}
+.common_reason_02_box div:first-child {
+order:2;
+}
+
+.common_reason_02_box div:last-child {
+order:1;
+}
+
+/*体験*/
+.common_taiken_box {
+flex-wrap:wrap;
+}
+.common_taiken_in01, .common_taiken_in02 {
+    flex-basis: 100%;
+	}
+
+/* ----------- */
+/* 下部固定
+/* ----------- */
+/*メッセージ*/
+.common_message_in01{
+flex-wrap:wrap;
+}
+.common_message_tx,
+.common_message_img{
+    flex-basis: 100%;
+}
+
+.common_message_in01 {
+    padding: 3%;
+}
+
+.common_message_tx br {
+    display: block;
+}
+
+
+
+}
