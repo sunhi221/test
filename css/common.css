@@ -764,9 +764,25 @@ background-size: 110% !important;
 /* ----------- */
 
 
+.header_box h1 img {
+width:150px;
+	}
+.header_box h1{
+	margin: 8px 0 0 10px;
+	}
+.header_box{
+display: block;
+    position: fixed;
+	    z-index: 1;
+margin:0;
+padding:0px;
+width:100%;
+}
 
-
-
+.header_box p {
+    padding: 5px;
+    font-size: 1rem;
+	}
 
 #nav{
     position: absolute;
@@ -806,19 +822,20 @@ background-size: 110% !important;
 #hamburger {
     display: block;
     position: absolute;
-    top: 20px;
-    right: 30px;
+        top: 15px;
+    right: -16px;
     width: 55px;
-    height: 24px;
+    height: 20px;
     cursor: pointer;
     transition: .2s;
+	z-index: 999999;
 }
   
 header {
     /*ヘッダーを固定*/
     position: fixed;
     width: 100%;
-    height: 70px;
+    height: 50px;
     background: #fff;
 }
 
@@ -839,7 +856,7 @@ header {
     transform:-45deg;
   }
   #line2 {
-    top: 10px;
+    top: 9px;
 
   }
   #line3 {
@@ -859,7 +876,7 @@ header {
   
 .line_1 {
     transform:rotate(-45deg);
-    top:0;
+	top:8px !important;
 }
 
 .line_2 {
@@ -870,10 +887,10 @@ header {
 .line_3 {
     /*45度回転させる*/
     transform: rotate(45deg);
-    bottom: 0;
+       bottom: 10px !important;
 }
 
-main{padding-top:70px;}
+main{padding-top:50px;}
 
 
 
