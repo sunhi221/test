@@ -247,6 +247,7 @@ justify-content: space-between;
 	padding: 5%;
     box-sizing: border-box;
 	align-items: center;
+	margin-bottom:50px;
 }
 .common_reason_01_box div,
 .common_reason_02_box div{
@@ -271,6 +272,7 @@ margin-bottom:20px;
 border: 4px solid #ccc;
 border-top:none;
 padding: 0% 5% 5% 5%;
+margin-bottom:50px;
 }
 
 .common_taiken_box{
@@ -438,9 +440,63 @@ padding-bottom:50px;
 
 
 
+/* =================派生ページ設定ここから===================*/
+
+
+
 /* ----------- */
 /* 派生ヘッダー
 /* ----------- */
+
+.hasei_head01{
+background-color: #f2f2f2;
+}
+.hasei_head01 h1{
+font-weight: bold;
+font-size:2.5rem;
+letter-spacing: 1px;
+padding: 10px 0;
+}
+.hasei_head01.kounin{
+color:#3FA9F5;
+}
+.hasei_topimage{
+background-color: blue;
+color: #fff;
+padding: 50px;
+}
+.hasei_topimage_big{
+font-weight: bold;
+font-size: 6rem;
+    letter-spacing: 5px;
+}
+
+.hasei_topimage_bottom{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.hasei_topimage_small{
+font-size:1.7rem;
+flex-basis:50%;
+}
+.hasei_topimage_icon{
+flex-basis:40%;
+display: flex;
+}
+.hasei_topimage_icon p{
+margin-left:15px;
+}
+
+
+.hasei_topimage.kounin{
+background-image: url("../kounin/images/topimage_bg.jpg");
+}
+
+
+
+
+
 
 
 
@@ -455,10 +511,40 @@ color: #fff;
     font-size: 3rem;
 }
 
-/* =================派生ページ設定ここから===================*/
 
 
-/*派生タイトル部分*/
+/* ----------- */
+/* 吹き出し
+/* ----------- */
+
+
+
+
+/* 吹き出し本体 - 普通の吹き出し */
+.balloon1{
+  position: relative;
+  padding: 10px 20px;
+  background-color: #3e3e3e;
+  border-radius: 40px;         /* 角丸を指定 */
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+      top: 20px;
+}
+/* 三角アイコン - 普通の吹き出し */
+.balloon1::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -13px;
+  top: 11px;
+  border-right: 15px solid #3e3e3e;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
 
 
 /* ==================================================================================================================
@@ -650,6 +736,44 @@ flex-wrap:wrap;
 	margin-top:10px;
 
 }
+
+
+/* =================派生ページ設定ここから===================*/
+
+
+
+/* ----------- */
+/* 派生ヘッダー
+/* ----------- */
+
+
+
+
+
+
+.hasei_topimage_bottom {
+flex-wrap:wrap;
+}
+
+.hasei_topimage_small,
+.hasei_topimage_icon{
+    flex-basis: 100%;
+}
+
+.hasei_topimage{
+padding:50px 0;
+}
+
+.hasei_topimage_big {
+    letter-spacing: 1px;}
+
+.hasei_topimage_icon {
+    max-width: 80%;}
+.hasei_topimage_small {
+margin:10px 0;
+}
+
+
 
 
 }

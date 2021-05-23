@@ -1,59 +1,243 @@
 /*PC-------------------------------------------------------------------*/
 
+/* ----------- */
+/* よくある質問
+/* ----------- */
 
 
-.news_wrap {display: flex;
-justify-content: space-between;
-margin:50px 0;
+.qa_box{
+position: relative;
+padding-bottom:50px;
+}
+.qa_a{
+background-color: #fff;
+border-radius: 80px;
+    padding: 40px;
+	    width: 80%;
+    margin-left: auto;
 }
 
-.news_wrap h2{
-color: #0F498A;
-border-bottom:1px solid #ccc;
+.qa_a h3{
+font-weight: bold;
+font-size:2.0rem;
+}
+
+
+/* ----------- */
+/* コース紹介
+/* ----------- */
+
+
+
+.cour_icon_bigwrap{margin-bottom:50px;}
+.cour_icon_wrap{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.cour_icon_box{
+text-align: center;
+flex-basis:28%;
+}
+.cour_icon_box h3{
+font-weight: bold;
+color: #0081F5;
+font-size:3rem;
+    margin-bottom: 5%;
+}
+
+.cour_icon_box div{
+    width: 70%;
+    margin: 15% auto 10%;
+}
+
+.cour_icon_box p{
+font-size:1.4rem;
 font-weight: bold;
 }
-.news_l{
-flex-basis:20%;
+
+
+.cour_ti{
+color:#0081F5;
+border-bottom:1px solid #0081F5;
+font-weight: bold;
+margin-top:20px;
 }
 
-.news_l_in {
-    margin-bottom: 50px;
+.cour_tx{
+font-weight: bold;
 }
-.news_l_in h2{
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-	}
-.news_r{
-flex-basis:75%;
+
+.cour_study{
+display: flex;
+flex-wrap:wrap;
+background-color: #DCEEFD;
+width:80%;
+margin:2% auto;
+padding:3%;
+box-sizing: border-box;
+font-weight: bold;
 }
-.news_kiji {
-margin-bottom:70px;
+.cour_study li{
+flex-basis:25%;
+}
+
+.cour_study li::before{
+content: "●";
+margin-right:10px;
+}
+
+
+/*テーブル周り*/
+
+.kounin_table {
+margin:2% auto;
+}
+.kounin_table table{
+width:80%;
+margin:0 auto;
+
+    table-layout: fixed;
+}
+.kounin_table_in th {
+  background: #DCEEFD;
+  border: solid 1px #ccc;
+  color: #000;
+  padding: 10px;
+}
+.kounin_table_in td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.kounin_table_midashi th,
+.kounin_table_midashi td{
+  background: #DCEEFD;
+  color:#0081F5;
+    font-weight: bold;
+	
+}
+.kounin_table table tr,
+.kounin_table table th, 
+.kounin_table table td{
+vertical-align: middle;
+}
+.kounin_table p{
+margin-left:10%;
+}
+
+/* ----------- */
+/* 勉強の流れ
+/* ----------- */
+
+.flow_wrap{
+padding:5%;
+background-color: #fff;
+}
+
+/* ----------- */
+/* 伸びるボタン群
+/* ----------- */
+
+.nobi_btn{
+    color:#fff;
+    padding:2%;
+    font-size: 2.5rem;
+	font-weight: bold;
+    cursor: pointer;
+	text-align: center;
+}
+
+.nobi_btn_in{
+    transition: 0.2s;
+	background-color: #fff;
+	padding: 5%;
+	margin-bottom:50px;
+}
+
+.nobi_bg_blue
+{
+background-color: #0071BC;
+}
+
+.nobi_btn_flex{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.nobi_btn_flex_in{
+flex-basis:48%;
+}
+.nobi_btn_in h3{
+font-weight: bold;
+font-size:1.8rem;
+    margin-bottom: 1%;
+	color: #0081F5;
+}
+
+.nobi_btn_in p{
+font-size:1.4rem;
+margin-bottom:50px;
+}
+
+.nobi_btn_flex_in h4{
+font-weight: bold;
+margin-bottom:10px;
+}
+
+
+/*伸びボタン内の教科リスト*/
+.kounin_table.kyoukalist{
+font-size:1.2rem;
+}
+
+.kounin_table.kyoukalist td {
+    padding: 5px 10px;
+    text-align: left;
 	}
-.news_kiji span{
-color: #ccc;
-display: block;
-	}	
-.news_kiji h2{
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-	font-size:2.0rem;
-	}
-.news_kiji p{
-line-height: 180%;
-	}
+.nobi_btn_flex_in.ballon_wrap h3{
+margin-top:7%;
+}
+
+/*科目リスト*/
+
+.kamoku_box{
+border: 2px solid #ccc;
+text-align: center;
+padding: 2%;
+margin-bottom:20px;
+}
+.kamoku_box ul{
+display: flex;
+justify-content: center;
+}
+.kamoku_box h4{
+border-bottom:1px solid #000;
+margin-bottom:10px;
+padding-bottom:10px;
+font-weight: bold;
+font-size:2.2rem;
+}
+.kamoku_box li{
+border: 1px solid #29ABE2;
+margin:0 1% 20px;
+border-radius:3px;
+padding: 0.5% 1%;
+}
+
+.kamoku_box p{
+margin-bottom:0;
+}
+
+.keikou_tx{
+text-align: center;
+}
 
 /*tablet--------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 999px) {
 
 
-.news_l{
-flex-basis:25%;
-}
-
-.news_r{
-flex-basis:70%;
-}
 
 }
 
@@ -62,34 +246,55 @@ flex-basis:70%;
 
 @media screen and (max-width: 764px) {
 
-
-.news_wrap {
+.cour_icon_wrap {
 flex-wrap:wrap;
 }
-
-.news_l,.news_r{
-flex-basis: 100%;
+.cour_icon_box {
+    flex-basis: 100%;
+}
+.cour_icon_box div {
+    width: 40%;
+    margin: 10% auto 3%;
+}
+.kounin_table p {
+    margin-left: 0%;
 }
 
-.news_l{
-order:2;
+.cour_study {
+    width: 100%;
+	}
+
+.cour_study li {
+    flex-basis: 50%;
 }
 
-.news_r{
-order:1;
+/*テーブル周り*/
+
+ .kounin_table {
+    overflow-x: auto;
+  }
+  .kounin_table_in {
+    min-width: 640px;
+    margin: 0 10px 50px;
+  }
+  .kounin_table_in td {
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+  }
+  
+.nobi_btn_flex_in {
+    flex-basis: 100%;
 }
 
-.news_l_in ul{
-display: flex;
-flex-wrap: wrap;
-}
-.news_l_in ul li{
-margin-right: 5%;
+
+.nobi_btn_in p {
+    margin-bottom: 0%;
 }
 
-/* ----------- */
-/* ファーストビュー
-/* ----------- */
+
+
+
+
 
 
 }
