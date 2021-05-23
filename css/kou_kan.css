@@ -28,6 +28,14 @@ font-size:2.0rem;
 /* ----------- */
 
 
+.cour_icon_box.kounin h3{
+color: #0081F5;
+}
+
+.cour_icon_box.kango h3{
+color: #FF4263;
+}
+
 
 .cour_icon_bigwrap{margin-bottom:50px;}
 .cour_icon_wrap{
@@ -41,7 +49,6 @@ flex-basis:28%;
 }
 .cour_icon_box h3{
 font-weight: bold;
-color: #0081F5;
 font-size:3rem;
     margin-bottom: 5%;
 }
@@ -56,10 +63,17 @@ font-size:1.4rem;
 font-weight: bold;
 }
 
-
-.cour_ti{
+.cour_ti.kounin{
 color:#0081F5;
 border-bottom:1px solid #0081F5;
+font-weight: bold;
+margin-top:20px;
+}
+
+
+.cour_ti.kango{
+color:#FF4263;
+border-bottom:1px solid #FF4263;
 font-weight: bold;
 margin-top:20px;
 }
@@ -90,39 +104,52 @@ margin-right:10px;
 
 /*テーブル周り*/
 
-.kounin_table {
+.kounin_table_midashi td,
+.kounin_table th{
+  background: #DCEEFD;
+  color:#0081F5;
+  }
+.kango_table_midashi td,
+.kango_table th{
+  background: #FFD9E1;
+  color:#FF4263;
+}
+
+
+
+
+.koukan_table {
 margin:2% auto;
 }
-.kounin_table table{
+.koukan_table table{
 width:80%;
 margin:0 auto;
 
     table-layout: fixed;
 }
-.kounin_table_in th {
-  background: #DCEEFD;
+.koukan_table_in th {
   border: solid 1px #ccc;
   color: #000;
   padding: 10px;
 }
-.kounin_table_in td {
+
+
+.koukan_table_in td {
   padding: 10px;
   border: 1px solid #ccc;
   text-align: center;
 }
-.kounin_table_midashi th,
-.kounin_table_midashi td{
-  background: #DCEEFD;
-  color:#0081F5;
+.koukan_table_midashi th,
+.koukan_table_midashi td{
     font-weight: bold;
 	
 }
-.kounin_table table tr,
-.kounin_table table th, 
-.kounin_table table td{
+.koukan_table table tr,
+.koukan_table table th, 
+.koukan_table table td{
 vertical-align: middle;
 }
-.kounin_table p{
+.koukan_table p{
 margin-left:10%;
 }
 
@@ -133,6 +160,71 @@ margin-left:10%;
 .flow_wrap{
 padding:5%;
 background-color: #fff;
+}
+
+/*看護専用設定（対策ブロック）*/
+
+.flow_taisaku h3{
+background-color:#FF4263;
+text-align: center;
+font-weight: bold;
+font-size:2.4rem;
+color:#fff;
+padding: 8px;
+margin-top:30px;
+}
+
+.flow_taisaku h4{
+text-align: center;
+font-weight: bold;
+font-size:2.4rem;
+color:#FF4263;
+margin: 20px 0;
+}
+.flow_taisaku h5{
+font-weight: bold;
+font-size:2rem;
+}
+.flow_taisaku h5 span{
+color:#FF4263;
+margin-right:10px;
+}
+.flow_taisaku p{
+font-size:1.4rem;
+margin-bottom:20px;
+}
+
+.flow_taisaku_flex{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.flow_taisaku_in{
+flex-basis:48%;
+}
+
+.flow_taisaku_in02{
+display: flex;
+justify-content: space-between;
+margin:0 auto;
+max-width:600px;
+align-items: center;
+}
+
+.flow_in02_icon{
+flex-basis:20%;
+}
+
+.flow_taisaku_in02 ul{
+flex-basis:75%;
+color:#999;
+font-size:2.2rem;
+font-weight: bold;
+}
+.flow_in02_tx{
+text-align: center;
+margin-top:20px;
 }
 
 /* ----------- */
@@ -187,11 +279,11 @@ margin-bottom:10px;
 
 
 /*伸びボタン内の教科リスト*/
-.kounin_table.kyoukalist{
+.koukan_table.kyoukalist{
 font-size:1.2rem;
 }
 
-.kounin_table.kyoukalist td {
+.koukan_table.kyoukalist td {
     padding: 5px 10px;
     text-align: left;
 	}
@@ -256,7 +348,7 @@ flex-wrap:wrap;
     width: 40%;
     margin: 10% auto 3%;
 }
-.kounin_table p {
+.koukan_table p {
     margin-left: 0%;
 }
 
@@ -270,14 +362,14 @@ flex-wrap:wrap;
 
 /*テーブル周り*/
 
- .kounin_table {
+ .koukan_table {
     overflow-x: auto;
   }
-  .kounin_table_in {
+  .koukan_table_in {
     min-width: 640px;
     margin: 0 10px 50px;
   }
-  .kounin_table_in td {
+  .koukan_table_in td {
     border-top: solid 1px #ccc;
     border-bottom: solid 1px #ccc;
   }

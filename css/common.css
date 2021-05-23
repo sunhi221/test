@@ -217,6 +217,15 @@ color:#0F498A;
 color:#3FA9F5;
 }
 
+.common_ti01.pink{
+color:#FF4263;
+}
+
+.common_ti01.perple{
+color:#662D91;
+}
+
+
 .common_ti01.white{
 color:#fff;
 }
@@ -231,6 +240,14 @@ color:#fff;
 
 .bg_blue01{
  background: linear-gradient(70deg, #007DC7, #01C8FF);
+}
+
+.bg_pink01{
+ background: linear-gradient(70deg, #FFA118, #FF6485);
+}
+
+.bg_perple01{
+ background: linear-gradient(70deg, #5092FF, #7132D8);
 }
 
 
@@ -347,6 +364,12 @@ color: #0F498A;
  background:  linear-gradient(70deg, #0F5EBB, #0995FF);
 }
 
+.common_message_bg02{
+ background: linear-gradient(70deg, #FFA118, #FF6485);
+}
+
+
+
 .common_message_in01{
 display: flex;
 font-weight: bold;
@@ -406,6 +429,13 @@ background-color: #FFFF00;
 }
 
 
+.common_marker03{
+background-color: #FFFF00;
+    padding: 2px 7px;
+    margin: 0px 3px;
+	color: #FF4263;
+}
+
 /* ----------- */
 /* フッター
 /* ----------- */
@@ -460,6 +490,14 @@ padding: 10px 0;
 .hasei_head01.kounin{
 color:#3FA9F5;
 }
+.hasei_head01.kango{
+color:#FF4263;
+}
+.hasei_head01.goukaku{
+color:#564EE2;
+}
+
+
 .hasei_topimage{
 background-color: blue;
 color: #fff;
@@ -493,6 +531,14 @@ margin-left:15px;
 background-image: url("../kounin/images/topimage_bg.jpg");
 }
 
+.hasei_topimage.kango{
+background-image: url("../kango/images/topimage_bg.jpg");
+}
+
+
+.hasei_topimage.goukaku{
+background-image: url("../goukaku/images/topimage_bg.jpg");
+}
 
 
 
