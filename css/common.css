@@ -251,7 +251,13 @@ background: url("../images/tibg_qa.png") 100%;
 	background-size: 1000px;
     background-repeat: no-repeat;
     background-position: center;
-	
+}
+
+.common_ti01.strengths{
+background: url("../images/tibg_strengths.gif") 100%;
+	background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*文字色・個別設定*/
@@ -275,6 +281,11 @@ color:#662D91;
 .common_ti01.white{
 color:#fff;
 }
+
+.common_ti01.green{
+color:#5AC277;
+}
+
 
 
 
@@ -557,6 +568,11 @@ color:#FF4263;
 color:#564EE2;
 }
 
+.hasei_head01.about{
+color:#5AC277;
+}
+
+
 
 .hasei_topimage{
 background-color: blue;
@@ -599,6 +615,13 @@ background-image: url("../kango/images/topimage_bg.jpg");
 .hasei_topimage.goukaku{
 background-image: url("../goukaku/images/topimage_bg.jpg");
 }
+
+
+.hasei_topimage.about{
+background-image: url("../about/images/topimage_bg.jpg");
+background-position: bottom;
+}
+
 
 
 

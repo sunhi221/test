@@ -2,8 +2,124 @@
 
 
 /* ----------- */
-/* 上・合格実績リスト
+/* 上・メッセージ
 /* ----------- */
+
+
+.aboutbox01{
+color: #fff;
+padding:4%;
+max-width:700px;
+margin:0 auto 50px;
+}
+.aboutbox01 h3{
+font-weight: bold;
+font-size:3rem;
+text-align: center;
+margin-bottom:20px;
+}
+.aboutbox01 p{
+max-width:500px;
+margin:0 auto;
+}
+
+/* ----------- */
+/* 上・各特徴
+/* ----------- */
+
+
+
+.aboutbox02{
+background-image: url("../about/images/cercle_bg.jpg");
+background-position: center;
+    background-repeat: no-repeat;
+}
+.aboutbox02_in{
+display: flex;
+flex-wrap:wrap;
+justify-content: space-between;
+    padding: 10px 0;
+}
+
+
+.aboutbox02_1{
+color:#fff;
+flex-basis:40%;
+margin:50px 0;
+}
+.aboutbox02_1 h3{
+font-weight: bold;
+font-size:3rem;
+margin:10px 0;
+}
+.about_txicon01{
+background-color:#fff;
+font-weight: bold;
+color:#3FA9F5;
+display: inline-block;
+padding:5px 10px;
+}
+.about_txicon02{
+background-color:#fff;
+font-weight: bold;
+color:#FF1D25;
+display: inline-block;
+padding:5px 10px;
+}
+
+
+
+/* ----------- */
+/* 下・強み
+/* ----------- */
+
+
+
+.st_wrap{
+color:#fff;
+}
+.st_flex01{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.st_box01{
+flex-basis:38%;
+border-radius:10px;
+padding:5%;
+margin-bottom:4%;
+}
+.st_box_ti span{
+display: block;
+max-width:50px;
+margin:0 auto;
+}
+.st_box_ti h3{
+text-align: center;
+font-weight: bold;
+font-size:2.6rem;
+margin:20px 0;
+}
+
+.st_bigti{
+text-align: center;
+font-weight: bold;
+color:#3FA9F5;
+margin-bottom:20px;
+font-size:2rem;
+}
+
+.st_flex02{
+display: flex;
+justify-content: space-between;
+}
+.st_box02{
+flex-basis:24%;
+padding:3%;
+border-radius:10px;
+margin-bottom:4%;
+}
+
 
 
 
@@ -20,7 +136,29 @@
 /*smartphone------------------------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 764px) {
+.aboutbox01{
+padding:6%;
+margin:0 auto 30px;
+}
 
+.aboutbox02 {
+    background-size: cover;
+	}
+.aboutbox02_1{
+flex-basis:100%;
+margin:20px 0;
+}
+
+.st_box01 {
+    flex-basis: 100%;
+	}
+	
+.st_flex02{
+flex-wrap:wrap;
+}
+.st_box02 {
+    flex-basis: 100%;
+	}
 
 }
 
