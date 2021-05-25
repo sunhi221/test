@@ -122,7 +122,9 @@ _:-ms-lang(x), img {
 /* ----------- */
 
 
-
+header{
+z-index:100;
+}
 
 
 /*ヘッダー*/
@@ -185,6 +187,10 @@ font-size: 2rem;
     align-items: center;
 	font-weight: bold;
 	padding: 50px 0;
+}
+
+.common_ti01 br{
+display: none;
 }
 .common_ti01:before,
 .common_ti01:after {
@@ -349,6 +355,10 @@ margin-bottom:20px;
 
 
 /*体験*/
+
+.hasei_taiken_wrap{
+margin-bottom:50px;
+}
 
 .common_taiken_wrap{
 border: 4px solid #ccc;
@@ -609,6 +619,7 @@ background-image: url("../kounin/images/topimage_bg.jpg");
 
 .hasei_topimage.kango{
 background-image: url("../kango/images/topimage_bg.jpg");
+background-position: center;
 }
 
 
@@ -776,7 +787,9 @@ background-size: 110% !important;
 
 
 
-
+.common_ti01 br{
+display: block;
+}
 
 
 

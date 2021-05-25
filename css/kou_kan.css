@@ -360,6 +360,20 @@ flex-wrap:wrap;
     flex-basis: 50%;
 }
 
+.flow_taisaku_in{
+flex-basis:100%;
+}
+
+.flow_in02_icon {
+    flex-basis: 10%;
+}
+.flow_taisaku_in02 ul {
+    flex-basis: 85%;
+}
+.flow_taisaku p {
+text-align: left;
+}
+
 /*テーブル周り*/
 
  .koukan_table {
@@ -385,8 +399,15 @@ flex-wrap:wrap;
 
 
 
-
-
+.qa_a{
+border-radius: 50px;
+}
+.qa_box {
+    padding-bottom: 0px;
+}
+.qa_box:last-child {
+    padding-bottom: 50px;
+}
 
 
 }
