@@ -226,28 +226,28 @@ display: block;
 
 /*背景文字・個別設定*/
 .common_ti01.course{
-background: url("../images/tibg_course.gif") 100%;
+background: url("../images/tibg_course.png") 100%;
 	background-size: 1000px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .common_ti01.reason{
-background: url("../images/tibg_reason.gif") 100%;
+background: url("../images/tibg_reason.png") 100%;
 	background-size: 1000px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .common_ti01.passing{
-background: url("../images/tibg_passing.gif") 100%;
+background: url("../images/tibg_passing.png") 100%;
 	background-size: 1000px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .common_ti01.contact{
-background: url("../images/tibg_contact.gif") 100%;
+background: url("../images/tibg_contact.png") 100%;
 	background-size: 1000px;
     background-repeat: no-repeat;
     background-position: center;
@@ -260,7 +260,7 @@ background: url("../images/tibg_qa.png") 100%;
 }
 
 .common_ti01.strengths{
-background: url("../images/tibg_strengths.gif") 100%;
+background: url("../images/tibg_strengths.png") 100%;
 	background-size: 1000px;
     background-repeat: no-repeat;
     background-position: center;
