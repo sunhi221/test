@@ -159,6 +159,11 @@ justify-content: flex-end;}
 margin-left:20px;
 }
 
+#nav a.hover{
+color:#0F498A;
+font-weight:bold;
+}
+
 
 /*ボタン*/
 .common_btn01 a{
@@ -338,7 +343,6 @@ margin-bottom:20px;
 border: 4px solid #ccc;
 border-top:none;
 padding: 0% 5% 5% 5%;
-margin-bottom:50px;
 }
 
 .common_taiken_box{
@@ -375,6 +379,7 @@ padding: 3px 6px;
 
 .common_taiken_in01 span{
 display: block;
+margin-top:10px;
 }
 .common_taiken_kango{
 background-color: #FF4263;
