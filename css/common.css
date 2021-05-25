@@ -632,6 +632,7 @@ background-position: center;
 
 .hasei_topimage.goukaku{
 background-image: url("../goukaku/images/topimage_bg.jpg");
+background-position: left;
 }
 
 
@@ -648,8 +649,11 @@ background-position: bottom;
 
 
 .hasei_head02{
-background-color: blue;
     padding: 60px 0;
+}
+
+.hasei_head02.news{
+background-image: url("../news/images/topimage_bg.jpg");
 }
 
 .hasei_head02 h1{
@@ -1069,7 +1073,7 @@ flex-wrap:wrap;
 }
 
 .common_message_in01 {
-    padding: 3%;
+    padding: 10% 0;
 }
 
 .common_message_tx br {
