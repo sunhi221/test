@@ -392,12 +392,13 @@ text-align: left;
     flex-basis: 100%;
 }
 
-
 .nobi_btn_in p {
-    margin-bottom: 0%;
+    margin-bottom: 20px;
 }
 
-
+.kamoku_box p{
+    margin-bottom: 0px;
+}
 
 .qa_a{
 border-radius: 50px;

@@ -266,6 +266,13 @@ background: url("../images/tibg_strengths.png") 100%;
     background-position: center;
 }
 
+.common_ti01.column{
+background: url("../images/tibg_column.png") 100%;
+	background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /*文字色・個別設定*/
 .common_ti01.darkblue{
 color:#0F498A;
